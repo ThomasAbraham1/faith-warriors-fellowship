@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-gold-50: #fdf9ef;
+  --color-gold-100: #faf0d4;
+  --color-gold-200: #f4dea3;
+  --color-gold-300: #ecc867;
+  --color-gold-400: #e4b03a;
+  --color-gold-500: #C8972A;
+  --color-gold-600: #b07820;
+  --color-gold-700: #8a5c19;
+  --color-gold-800: #714a1b;
+  --color-gold-900: #5f3e1a;
+
+  --color-navy-50: #f0f4f8;
+  --color-navy-100: #d9e4f0;
+  --color-navy-200: #b3c8e1;
+  --color-navy-300: #7fa3cb;
+  --color-navy-400: #4d7daf;
+  --color-navy-500: #2c5f8e;
+  --color-navy-600: #1e4875;
+  --color-navy-700: #163559;
+  --color-navy-800: #0F1B2D;
+  --color-navy-900: #080f1a;
+
+  --color-cream-50: #FDFAF6;
+  --color-cream-100: #F7F3EE;
+  --color-cream-200: #ede5d8;
+  --color-cream-300: #dfd0bc;
+
+  --font-heading: 'Playfair Display', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #FDFAF6;
+  color: #1A1A2E;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0F1B2D;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8972A;
+  border-radius: 3px;
+}
+
+/* Gold underline divider */
+.gold-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #C8972A, #e4b03a);
+  border-radius: 2px;
+  margin: 0 auto;
+}
+
+/* Glass card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 151, 42, 0.2);
+  border-radius: 16px;
+}
+
+/* Hero overlay */
+.hero-overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(8, 15, 26, 0.85) 0%,
+    rgba(15, 27, 45, 0.75) 50%,
+    rgba(8, 15, 26, 0.80) 100%
+  );
+}
+
+/* Gold gradient text */
+.gold-text {
+  background: linear-gradient(135deg, #C8972A, #e4b03a, #f4dea3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section padding */
+.section-pad {
+  padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+  .section-pad {
+    padding: 56px 0;
+  }
+}
