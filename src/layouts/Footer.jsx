@@ -75,7 +75,7 @@ const Footer = () => {
             <h4 className="text-white font-semibold mb-5 uppercase tracking-widest text-xs">Service Times</h4>
             <ul className="space-y-3">
               {[
-                { day: 'Sunday Worship', time: '10:30 AM' },
+                { day: 'Sunday Worship', time: '10:00 AM' },
                 { day: 'Midweek Service', time: 'TBA' },
                 { day: 'Prayer Meeting', time: 'TBA' },
                 { day: 'Bible Study', time: 'TBA' },
@@ -94,11 +94,11 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3 text-sm">
                 <HiLocationMarker className="text-amber-500 mt-0.5 flex-shrink-0" size={16} />
-                <span className="text-slate-400">Your Church Address,<br />City, State, PIN</span>
+                <span className="text-slate-400">Pillar no -116, Bhangel,<br />Sector 102, Salarpur Khadar,<br />Noida, Uttar Pradesh 201304</span>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <HiPhone className="text-amber-500 flex-shrink-0" size={16} />
-                <a href="tel:+910000000000" className="text-slate-400 hover:text-amber-400 transition-colors">+91 00000 00000</a>
+                <a href="tel:+919582271412" className="text-slate-400 hover:text-amber-400 transition-colors">+91 95822 71412</a>
               </li>
               <li className="flex items-center gap-3 text-sm">
                 <HiMail className="text-amber-500 flex-shrink-0" size={16} />

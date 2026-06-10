@@ -161,7 +161,7 @@ const PrayerRequest = () => {
           <ScrollReveal delay={0.2}>
             <div className="mt-8 text-center">
               <p className="text-slate-500 text-sm">
-                Need immediate prayer? Call us at <a href="tel:+910000000000" className="text-amber-600 font-semibold hover:text-amber-500">+91 00000 00000</a> or WhatsApp our prayer team.
+                Need immediate prayer? Call us at <a href="tel:+919582271412" className="text-amber-600 font-semibold hover:text-amber-500">+91 95822 71412</a> or WhatsApp our prayer team.
               </p>
             </div>
           </ScrollReveal>

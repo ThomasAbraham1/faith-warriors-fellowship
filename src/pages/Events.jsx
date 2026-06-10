@@ -9,7 +9,7 @@ const events = [
   {
     title: 'Sunday Worship Service',
     date: 'Every Sunday',
-    time: '10:30 AM',
+    time: '10:00 AM',
     location: 'Main Auditorium',
     description: 'Join us every Sunday for an uplifting worship experience filled with praise, prayer, and the Word of God.',
     type: 'recurring',

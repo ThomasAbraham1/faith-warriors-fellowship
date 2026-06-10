@@ -46,9 +46,9 @@ const Contact = () => {
 
               <div className="space-y-5 mb-8">
                 {[
-                  { icon: HiLocationMarker, label: 'Address', value: 'Your Church Address\nCity, State, PIN Code' },
-                  { icon: HiPhone, label: 'Phone', value: '+91 00000 00000' },
-                  { icon: HiMail, label: 'Email', value: 'info@faithwarriors.org' },
+                  { icon: HiLocationMarker, label: 'Address', value: 'Pillar no -116, Bhangel, Sector 102\nSalarpur Khadar, Noida, UP 201304' },
+                  { icon: HiPhone, label: 'Phone', value: '+91 95822 71412' },
+                  { icon: HiMail, label: 'Email', value: 'info@faithwarriors.in' },
                 ].map((item, i) => (
                   <ScrollReveal key={item.label} delay={i * 0.1}>
                     <div className="flex items-start gap-4 p-4 bg-white rounded-2xl shadow-sm border border-slate-100">
@@ -73,7 +73,7 @@ const Contact = () => {
                   </div>
                   <ul className="space-y-2.5">
                     {[
-                      { name: 'Sunday Worship', time: '10:30 AM' },
+                      { name: 'Sunday Worship', time: '10:00 AM' },
                       { name: 'Midweek Service', time: 'TBA' },
                       { name: 'Prayer Meeting', time: 'TBA' },
                       { name: 'Bible Study', time: 'TBA' },
@@ -153,7 +153,7 @@ const Contact = () => {
                           name="phone"
                           value={form.phone}
                           onChange={handleChange}
-                          placeholder="+91 00000 00000"
+                          placeholder="+91 95822 71412"
                           className="w-full px-4 py-3 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition-all text-slate-800 bg-slate-50"
                         />
                       </div>
@@ -201,12 +201,17 @@ const Contact = () => {
 
           {/* Map Placeholder */}
           <ScrollReveal delay={0.2}>
-            <div className="mt-14 rounded-3xl overflow-hidden shadow-xl border border-slate-200 h-72 flex items-center justify-center" style={{ backgroundColor: '#1a2a3a' }}>
-              <div className="text-center">
-                <div className="text-4xl mb-3">📍</div>
-                <p className="text-white font-semibold">Google Maps</p>
-                <p className="text-slate-400 text-sm mt-1">Add your Google Maps embed link here</p>
-              </div>
+            <div className="mt-14 rounded-3xl overflow-hidden shadow-xl border border-slate-200 h-72">
+              <iframe 
+                src="https://maps.google.com/maps?q=Faith%20Warriors%20Fellowship,%20Noida&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0 }} 
+                allowFullScreen="" 
+                loading="lazy" 
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Google Maps Location"
+              ></iframe>
             </div>
           </ScrollReveal>
         </div>

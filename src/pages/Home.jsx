@@ -47,7 +47,7 @@ const testimonials = [
 ];
 
 const serviceTimes = [
-  { name: 'Sunday Worship', time: '10:30 AM', icon: '⛪' },
+  { name: 'Sunday Worship', time: '10:00 AM', icon: '⛪' },
   { name: 'Midweek Service', time: 'TBA', icon: '📖' },
   { name: 'Prayer Meeting', time: 'TBA', icon: '🙏' },
   { name: 'Bible Study', time: 'TBA', icon: '✝️' },
@@ -58,7 +58,7 @@ const Home = () => {
     <div>
       <Helmet>
         <title>Faith Warriors Fellowship — Walking in Faith, Living in Victory</title>
-        <meta name="description" content="Faith Warriors Fellowship is a vibrant church community in India. Join us for Sunday worship at 10:30 AM, Bible study, prayer meetings, and community." />
+        <meta name="description" content="Faith Warriors Fellowship — A vibrant church community in Noida, Uttar Pradesh. Join us for Sunday worship at 10 AM, Bible study, prayer meetings, and community life." />
         <link rel="canonical" href="https://faithwarriorsfellowship.org/" />
       </Helmet>
       {/* Hero */}

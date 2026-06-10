@@ -129,7 +129,7 @@ const Give = () => {
           <ScrollReveal delay={0.2}>
             <div className="mt-8 p-5 rounded-2xl bg-amber-600/10 border border-amber-500/20 text-center">
               <p className="text-amber-300 text-sm">
-                💛 After giving, please WhatsApp us at <strong>+91 00000 00000</strong> with your name and amount for our records. God bless your generosity!
+                💛 After giving, please WhatsApp us at <strong>+91 95822 71412</strong> with your name and amount for our records. God bless your generosity!
               </p>
             </div>
           </ScrollReveal>
