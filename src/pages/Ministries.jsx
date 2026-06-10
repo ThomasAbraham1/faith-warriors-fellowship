@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import {
   FaUsers, FaBookOpen, FaPray, FaMusic, FaBullhorn,
@@ -70,6 +71,11 @@ const ministries = [
 const Ministries = () => {
   return (
     <div>
+      <Helmet>
+        <title>Our Ministries — Faith Warriors Fellowship</title>
+        <meta name="description" content="Discover our ministries at Faith Warriors Fellowship — Sunday School, Youth Ministry, Women's and Men's Fellowship, Worship, Prayer, Evangelism, and Media Ministry." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/ministries" />
+      </Helmet>
       <HeroSection
         title="Our"
         titleHighlight="Ministries"

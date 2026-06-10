@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { FaCheckCircle } from 'react-icons/fa';
 import HeroSection from '../components/ui/HeroSection';
@@ -24,6 +25,11 @@ const leadership = [
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <title>About Us — Faith Warriors Fellowship</title>
+        <meta name="description" content="Learn about Faith Warriors Fellowship — our vision, mission, history, and the leadership team that serves our community under Pastor Terry." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/about" />
+      </Helmet>
       <HeroSection
         title="About"
         titleHighlight="Faith Warriors Fellowship"

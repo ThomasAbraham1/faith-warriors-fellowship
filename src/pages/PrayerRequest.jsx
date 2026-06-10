@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/ui/HeroSection';
@@ -33,6 +34,11 @@ const PrayerRequest = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Prayer Request — Faith Warriors Fellowship</title>
+        <meta name="description" content="Submit a confidential prayer request to the Faith Warriors Fellowship prayer team. We believe in the power of prayer and are here to intercede for you." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/prayer-request" />
+      </Helmet>
       <HeroSection
         title="Prayer"
         titleHighlight="Request"

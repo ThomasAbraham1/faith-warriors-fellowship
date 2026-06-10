@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import {
@@ -55,6 +56,11 @@ const serviceTimes = [
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Faith Warriors Fellowship — Walking in Faith, Living in Victory</title>
+        <meta name="description" content="Faith Warriors Fellowship is a vibrant church community in India. Join us for Sunday worship at 10:30 AM, Bible study, prayer meetings, and community." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/" />
+      </Helmet>
       {/* Hero */}
       <HeroSection
         title="Welcome to"

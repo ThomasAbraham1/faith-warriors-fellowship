@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaPlay, FaHeadphones } from 'react-icons/fa';
@@ -24,6 +25,11 @@ const Sermons = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Sermons &amp; Messages — Faith Warriors Fellowship</title>
+        <meta name="description" content="Listen to powerful Word-based sermons from Faith Warriors Fellowship. Browse messages on faith, victory, prayer, the Holy Spirit, and healing by Ps. Terry." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/sermons" />
+      </Helmet>
       <HeroSection
         title="Sermons &"
         titleHighlight="Messages"

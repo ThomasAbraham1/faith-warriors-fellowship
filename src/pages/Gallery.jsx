@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { HiX, HiChevronLeft, HiChevronRight } from 'react-icons/hi';
@@ -45,6 +46,11 @@ const Gallery = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Gallery — Faith Warriors Fellowship</title>
+        <meta name="description" content="Browse photos from Faith Warriors Fellowship — Sunday worship services, water baptisms, community outreach, children's ministry, and special events." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/gallery" />
+      </Helmet>
       <HeroSection
         title="Our"
         titleHighlight="Gallery"

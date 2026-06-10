@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaUniversity, FaMobile, FaCheckCircle } from 'react-icons/fa';
@@ -31,6 +32,11 @@ const Give = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Give &amp; Support the Kingdom — Faith Warriors Fellowship</title>
+        <meta name="description" content="Support the ministry of Faith Warriors Fellowship through your generous giving. Give via bank transfer or UPI and partner with God's kingdom-building work." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/give" />
+      </Helmet>
       <HeroSection
         title="Give &"
         titleHighlight="Support the Kingdom"

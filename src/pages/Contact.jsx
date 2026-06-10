@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { HiMail, HiPhone, HiLocationMarker, HiClock } from 'react-icons/hi';
@@ -21,6 +22,11 @@ const Contact = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Contact Us — Faith Warriors Fellowship</title>
+        <meta name="description" content="Get in touch with Faith Warriors Fellowship. Visit us on Sundays at 10:30 AM, send us a message, or find our address, phone number, and social media links." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/contact" />
+      </Helmet>
       <HeroSection
         title="Get in"
         titleHighlight="Touch"

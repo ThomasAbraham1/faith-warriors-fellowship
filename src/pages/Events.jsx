@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import { HiCalendar, HiClock, HiLocationMarker } from 'react-icons/hi';
 import HeroSection from '../components/ui/HeroSection';
@@ -117,6 +118,11 @@ const Events = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Events &amp; Gatherings — Faith Warriors Fellowship</title>
+        <meta name="description" content="Stay updated with upcoming events at Faith Warriors Fellowship — Sunday worship services, midweek Bible study, prayer meetings, youth gatherings, and special conferences." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/events" />
+      </Helmet>
       <HeroSection
         title="Events &"
         titleHighlight="Gatherings"

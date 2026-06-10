@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -17,6 +18,11 @@ const beliefs = [
 const Beliefs = () => {
   return (
     <div>
+      <Helmet>
+        <title>What We Believe — Faith Warriors Fellowship</title>
+        <meta name="description" content="Explore the core beliefs and statement of faith of Faith Warriors Fellowship. We stand on the Holy Trinity, salvation by grace, the Bible, baptism, and more." />
+        <link rel="canonical" href="https://faithwarriorsfellowship.org/beliefs" />
+      </Helmet>
       <HeroSection
         title="What We"
         titleHighlight="Believe"
