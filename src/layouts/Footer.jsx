@@ -78,7 +78,7 @@ const Footer = () => {
                 { day: 'Sunday Worship', time: '10:00 AM' },
                 { day: 'Midweek Service', time: 'TBA' },
                 { day: 'Prayer Meeting', time: 'TBA' },
-                { day: 'Bible Study', time: 'TBA' },
+                { day: 'Bible Study (Sat)', time: '7:00-8:30 PM' },
               ].map(({ day, time }) => (
                 <li key={day} className="flex justify-between items-start text-sm">
                   <span className="text-slate-400">{day}</span>

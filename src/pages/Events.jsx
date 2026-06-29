@@ -18,8 +18,8 @@ const events = [
   },
   {
     title: 'Midweek Bible Study',
-    date: 'Every Wednesday',
-    time: 'TBA',
+    date: 'Every Saturday',
+    time: '7:00 PM - 8:30 PM',
     location: 'Main Hall',
     description: 'Dig deeper into God\'s Word every midweek as we study, discuss, and apply the scriptures to our daily lives.',
     type: 'recurring',

@@ -76,7 +76,7 @@ const Contact = () => {
                       { name: 'Sunday Worship', time: '10:00 AM' },
                       { name: 'Midweek Service', time: 'TBA' },
                       { name: 'Prayer Meeting', time: 'TBA' },
-                      { name: 'Bible Study', time: 'TBA' },
+                      { name: 'Bible Study (Sat)', time: '7:00-8:30 PM' },
                     ].map(s => (
                       <li key={s.name} className="flex justify-between text-sm">
                         <span className="text-slate-500">{s.name}</span>

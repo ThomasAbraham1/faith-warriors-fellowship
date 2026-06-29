@@ -9,7 +9,7 @@ import { HiArrowRight, HiClock } from 'react-icons/hi';
 import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
 import ScrollReveal from '../components/ui/ScrollReveal';
-import pastorImg from '../assets/pastor.png';
+import whoWeAreImg from '../assets/who-we-are.jpg';
 
 const ministries = [
   { icon: FaChild, name: 'Sunday School', color: 'from-blue-500 to-blue-600' },
@@ -50,7 +50,7 @@ const serviceTimes = [
   { name: 'Sunday Worship', time: '10:00 AM', icon: '⛪' },
   { name: 'Midweek Service', time: 'TBA', icon: '📖' },
   { name: 'Prayer Meeting', time: 'TBA', icon: '🙏' },
-  { name: 'Bible Study', time: 'TBA', icon: '✝️' },
+  { name: 'Bible Study', time: 'Sat 7:00-8:30 PM', icon: '✝️' },
 ];
 
 const Home = () => {
@@ -98,12 +98,14 @@ const Home = () => {
             <ScrollReveal direction="right">
               <div className="relative">
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
-                  <img src={pastorImg} alt="Pastor Terry" className="w-full h-full object-cover" />
+                  <img src={whoWeAreImg} alt="Who We Are" className="w-full h-full object-cover" />
                 </div>
+                {/* 
                 <div className="absolute -bottom-6 -right-6 bg-amber-600 rounded-2xl p-5 shadow-xl">
                   <p className="text-white font-bold text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>Ps. Terry</p>
                   <p className="text-amber-100 text-xs">Senior Pastor</p>
-                </div>
+                </div> 
+                */}
               </div>
             </ScrollReveal>
             <div>
