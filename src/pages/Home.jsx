@@ -9,7 +9,7 @@ import { HiArrowRight, HiClock } from 'react-icons/hi';
 import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
 import ScrollReveal from '../components/ui/ScrollReveal';
-import whoWeAreImg from '../assets/who-we-are-new.jpeg';
+import whoWeAreImg from '../assets/church-neutral.jpg';
 
 const ministries = [
   { icon: FaChild, name: 'Sunday School', color: 'from-blue-500 to-blue-600' },
