@@ -4,7 +4,8 @@ import { FaCheckCircle } from 'react-icons/fa';
 import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
 import ScrollReveal from '../components/ui/ScrollReveal';
-import pastorImg from '../assets/pastor.png';
+import terryImg from '../assets/terry.jpeg';
+import priyaImg from '../assets/priya.png';
 import heroBg from '../assets/hero_bg.png';
 
 const missionItems = [
@@ -16,8 +17,8 @@ const missionItems = [
 ];
 
 const leadership = [
-  { name: 'Ps. Terry', role: 'Senior Pastor', initials: 'PT', color: 'bg-amber-600', img: pastorImg },
-  { name: 'Team Leader', role: 'Associate Pastor', initials: 'TL', color: 'bg-blue-600', img: null },
+  { name: 'Ps. Terry', role: 'Senior Pastor', initials: 'PT', color: 'bg-amber-600', img: terryImg },
+  { name: 'Ps. Priya', role: 'Senior Pastor', initials: 'PP', color: 'bg-amber-500', img: priyaImg },
   { name: 'Worship Leader', role: 'Worship Ministry', initials: 'WL', color: 'bg-purple-600', img: null },
   { name: 'Youth Leader', role: 'Youth Ministry', initials: 'YL', color: 'bg-green-600', img: null },
 ];
@@ -100,28 +101,33 @@ const About = () => {
         </div>
       </section>
 
-      {/* Pastor */}
+      {/* Pastors */}
       <section className="section-pad" style={{ backgroundColor: '#0F1B2D' }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <SectionHeader label="Senior Pastor" title="Meet Pastor Terry" light />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeader label="Our Leaders" title="Meet Our Pastors" light />
           <ScrollReveal>
-            <div className="glass-card p-8 md:p-12 grid md:grid-cols-3 gap-10 items-center">
-              <div className="md:col-span-1 flex justify-center">
-                <div className="relative">
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/50 shadow-2xl shadow-amber-600/20">
-                    <img src={pastorImg} alt="Pastor Terry" className="w-full h-full object-cover" />
-                  </div>
-                  <div className="absolute -bottom-3 -right-3 bg-amber-600 rounded-xl px-3 py-1.5 text-white text-xs font-bold shadow-lg">Senior Pastor</div>
+            <div className="grid md:grid-cols-2 gap-10">
+              {/* Ps Terry */}
+              <div className="glass-card p-8 text-center flex flex-col items-center">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/50 shadow-2xl shadow-amber-600/20 mb-6">
+                  <img src={terryImg} alt="Pastor Terry" className="w-full h-full object-cover" />
                 </div>
-              </div>
-              <div className="md:col-span-2 text-white">
-                <h3 className="text-3xl font-bold mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>Ps. Terry</h3>
-                <p className="text-amber-400 font-medium mb-5">Senior Pastor, Faith Warriors Fellowship</p>
-                <p className="text-slate-300 leading-relaxed mb-4">
-                  Pastor Terry is a passionate servant of God with a heart for seeing lives transformed by the power of the Gospel. With a burning desire to see people encounter Jesus and walk in their God-given destiny, Pastor Terry leads Faith Warriors Fellowship with vision, faith, and love.
+                <h3 className="text-2xl font-bold mb-1 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>Ps. Terry</h3>
+                <p className="text-amber-400 font-medium mb-5">Senior Pastor</p>
+                <p className="text-slate-300 leading-relaxed text-sm">
+                  Pastor Terry is a passionate servant of God with a heart for seeing lives transformed by the power of the Gospel. With a burning desire to see people encounter Jesus and walk in their God-given destiny, he leads Faith Warriors Fellowship with vision, faith, and love.
                 </p>
-                <p className="text-slate-300 leading-relaxed">
-                  Known for dynamic, Word-based preaching and a heart of compassion, Pastor Terry believes that every person has a purpose and a calling — and that the local church is the vehicle God uses to help people discover and fulfil that calling.
+              </div>
+
+              {/* Ps Priya */}
+              <div className="glass-card p-8 text-center flex flex-col items-center">
+                <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-amber-500/50 shadow-2xl shadow-amber-600/20 mb-6">
+                  <img src={priyaImg} alt="Pastor Priya" className="w-full h-full object-cover object-top" />
+                </div>
+                <h3 className="text-2xl font-bold mb-1 text-white" style={{ fontFamily: "'Playfair Display', serif" }}>Ps. Priya</h3>
+                <p className="text-amber-400 font-medium mb-5">Senior Pastor</p>
+                <p className="text-slate-300 leading-relaxed text-sm">
+                  Pastor Priya serves faithfully alongside Pastor Terry, bringing a powerful teaching ministry and a heart for worship. She is dedicated to equipping the saints, nurturing families, and helping believers grow deeper in their relationship with God.
                 </p>
               </div>
             </div>

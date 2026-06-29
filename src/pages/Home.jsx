@@ -100,10 +100,6 @@ const Home = () => {
                 <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                   <img src={whoWeAreImg} alt="Who We Are" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute -bottom-6 -right-6 bg-amber-600 rounded-2xl p-5 shadow-xl">
-                  <p className="text-white font-bold text-lg" style={{ fontFamily: "'Playfair Display', serif" }}>Ps. Terry</p>
-                  <p className="text-amber-100 text-xs">Senior Pastor</p>
-                </div>
               </div>
             </ScrollReveal>
             <div>
