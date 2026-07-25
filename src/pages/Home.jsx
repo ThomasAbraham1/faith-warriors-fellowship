@@ -32,28 +32,7 @@ const testimonials = [
     initials: 'KB',
     color: 'bg-emerald-600',
     images: [testimonyImg1, testimonyImg2]
-  },
-  {
-    name: 'Sarah M.',
-    category: 'Salvation',
-    text: 'I came broken and lost, but through this church community, I found Jesus and my life has never been the same. His grace truly transforms!',
-    initials: 'SM',
-    color: 'bg-amber-600',
-  },
-  {
-    name: 'David K.',
-    category: 'Healing',
-    text: 'The doctors said there was no cure, but God had a different plan. After the prayer team prayed for me, I was completely healed. All glory to God!',
-    initials: 'DK',
-    color: 'bg-blue-600',
-  },
-  {
-    name: 'Grace T.',
-    category: 'Family Restoration',
-    text: 'My marriage was on the brink of collapse. Through pastoral counseling and prayer, God restored our family. We are stronger than ever!',
-    initials: 'GT',
-    color: 'bg-purple-600',
-  },
+  }
 ];
 
 const serviceTimes = [
@@ -193,7 +172,7 @@ const Home = () => {
             title="What God Has Done"
             subtitle="Real stories of lives transformed by the grace and power of God."
           />
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6 items-stretch max-w-5xl mx-auto">
             {testimonials.map((t, i) => (
               <ScrollReveal key={t.name} delay={i * 0.12}>
                 <motion.div
@@ -221,6 +200,15 @@ const Home = () => {
                 </motion.div>
               </ScrollReveal>
             ))}
+            <ScrollReveal delay={0.2}>
+              <div className="bg-white/50 rounded-2xl p-7 border-2 border-dashed border-slate-200 h-full flex flex-col items-center justify-center text-center min-h-[250px]">
+                <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mb-4">
+                  <FaBullhorn className="text-2xl text-slate-400" />
+                </div>
+                <h3 className="text-lg font-semibold text-slate-700 mb-2">More Stories Coming Soon</h3>
+                <p className="text-slate-500 text-sm">We're gathering more wonderful testimonies of God's grace to share with you here.</p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
