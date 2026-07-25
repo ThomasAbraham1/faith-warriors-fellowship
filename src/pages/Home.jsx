@@ -10,6 +10,8 @@ import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
 import ScrollReveal from '../components/ui/ScrollReveal';
 import whoWeAreImg from '../assets/church-neutral.jpg';
+import testimonyImg1 from '../assets/testimony1.jpeg';
+import testimonyImg2 from '../assets/testimony2.jpeg';
 
 const ministries = [
   { icon: FaChild, name: 'Sunday School', color: 'from-blue-500 to-blue-600' },
@@ -23,6 +25,14 @@ const ministries = [
 ];
 
 const testimonials = [
+  {
+    name: 'Kalyan Baman',
+    category: 'Healing',
+    text: '“My mother, Indra Maya, underwent kidney stone surgery at Yatharth Hospital, Noida. After the operation, her oxygen level suddenly dropped, and we were very worried. I searched on Google for a nearby church and found Faith Warriors Fellowship. I called Pastor Terry, who prayed for my mother. Within a few hours, her oxygen level increased, and the oxygen support was removed. We thank and praise God for His healing touch and faithfulness!”',
+    initials: 'KB',
+    color: 'bg-emerald-600',
+    images: [testimonyImg1, testimonyImg2]
+  },
   {
     name: 'Sarah M.',
     category: 'Salvation',
@@ -201,6 +211,13 @@ const Home = () => {
                     </div>
                   </div>
                   <p className="text-slate-600 text-sm leading-relaxed italic">{t.text}</p>
+                  {t.images && (
+                    <div className="flex gap-2 mt-4">
+                      {t.images.map((img, idx) => (
+                        <img key={idx} src={img} alt="Testimony" className="flex-1 h-32 object-cover rounded-lg" />
+                      ))}
+                    </div>
+                  )}
                 </motion.div>
               </ScrollReveal>
             ))}
