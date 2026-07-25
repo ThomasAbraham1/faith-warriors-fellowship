@@ -9,7 +9,7 @@ import { HiArrowRight, HiClock } from 'react-icons/hi';
 import HeroSection from '../components/ui/HeroSection';
 import SectionHeader from '../components/ui/SectionHeader';
 import ScrollReveal from '../components/ui/ScrollReveal';
-import whoWeAreImg from '../assets/church-neutral.jpg';
+import whoWeAreImg from '../assets/church-neutral.png';
 import testimonyImg1 from '../assets/testimony1.jpeg';
 import testimonyImg2 from '../assets/testimony2.jpeg';
 
